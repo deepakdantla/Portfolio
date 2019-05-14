@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="aboutMe">I am Deepak. I am an intermediate level Android Developer. I love to make
+                           apps that serves me and the people in some task</string>
+
+    <string name="skills">* Java "\n"* Android "\n"* C++</string>
+    <string name="work">* Habit Tracker "\n"* NewsPaper App "\n"* Inventory App</string>
+    <string name="contact">Email : deepak.official23@gmail.com</string>
+</resources>

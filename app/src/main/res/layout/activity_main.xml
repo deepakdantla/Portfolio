@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/colorWebsite"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/deepak"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Deepak Dantla Swarna Barath"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:fontFamily="@font/bevan" />
+
+            <TextView
+                android:id="@+id/devProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devName"
+                android:layout_marginTop="8dp"
+                android:text="Android Developer"
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:id="@+id/cardView"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:gravity="center"
+                android:text="Get in touch"
+                android:textColor="@color/colorWebsite" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutId"
+            android:background="@color/colorPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:id="@+id/viewPager">
+
+        </android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
